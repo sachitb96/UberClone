@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/paypalLayoutIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/paypal_icon" />
+
+    <TextView
+        android:id="@+id/paypalLayoutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/paypalLayoutIcon"
+        android:layout_toEndOf="@+id/paypalLayoutIcon"
+        android:layout_toRightOf="@+id/paypalLayoutIcon"
+        android:text="TextView" />
+</RelativeLayout>

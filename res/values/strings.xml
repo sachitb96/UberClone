@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RideMatcher</string>
+    <string name="facebook_app_id">1968485110054485</string>
+    <string name="fb_login_protocol_scheme">fb1968485110054485</string>
+    <string name="SignUpSocialDialog">Login Method</string>
+    <string name="InvalidPhone">Invalid Phone Number</string>
+    <string name="GoogleLogin">Sign Up with Google</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_map">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location_error">Location Services Off. Please turn on Location Services</string>
+    <string name="accepted_tag">Accepted</string>
+    <string name="google_directions">AIzaSyA68KfY9DTlxumnbxxErcKXH_3qxfX5hjA</string>
+    <string name="paypal_client">Ac-JYZnW6fyUvwsZhEiqKGUnylMLHc0Iebuvpa3_rltkpjBDFI17m9GlrQiHvPc07_XdFJL9YuOPNgVD</string>
+    <string name="stripe_api">pk_live_t7G1m9YdpznD0ritvqLID0p9</string>
+    <string name="sinch_cred">6d5a8a03-ffef-450e-9f24-c5559cd92098</string>
+    <string name="sinch_secret">JbumuQEemUW/f0j/1JmOZg==</string>
+</resources>

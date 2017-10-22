@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appmodel.ridematcher.PaymentActivity">
+
+    <TextView
+        android:id="@+id/paymentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Payment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="45dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/paymentTitle"
+        android:layout_alignStart="@+id/paymentTitle"
+        android:layout_below="@+id/paymentTitle"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/paymentMethod"
+        android:id="@+id/paymentList" />
+
+    <TextView
+        android:id="@+id/paymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paymentList"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/paymentList"
+        android:layout_marginBottom="195dp"
+        android:text="Add Payment Method" />
+
+    <ImageView
+        android:id="@+id/paymentCreditIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/paymentMethod"
+        android:layout_alignStart="@+id/paymentMethod"
+        android:layout_below="@+id/paymentList"
+        android:layout_marginTop="36dp"
+        app:srcCompat="@drawable/ic_unknown" />
+
+    <TextView
+        android:id="@+id/paymentAddCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/paymentCreditIcon"
+        android:layout_toEndOf="@+id/paymentCreditIcon"
+        android:layout_toRightOf="@+id/paymentCreditIcon"
+        android:onClick="addCreditCardInfo"
+        android:text="Add Credit or Debit Card" />
+
+    <ImageView
+        android:id="@+id/paymentPaypalIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/paymentCreditIcon"
+        android:layout_alignStart="@+id/paymentCreditIcon"
+        android:layout_below="@+id/paymentCreditIcon"
+        android:layout_marginTop="19dp"
+        android:layout_toLeftOf="@+id/paymentAddCredit"
+        android:layout_toStartOf="@+id/paymentAddCredit"
+        app:srcCompat="@drawable/paypal_icon" />
+
+    <TextView
+        android:id="@+id/paymentAddPaypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Paypal Account"
+        android:layout_alignTop="@+id/paymentPaypalIcon"
+        android:layout_toRightOf="@+id/paymentPaypalIcon"
+        android:layout_toEndOf="@+id/paymentPaypalIcon"
+        android:onClick="addPaypalAccount"
+        android:layout_marginTop="11dp" />
+
+
+</RelativeLayout>

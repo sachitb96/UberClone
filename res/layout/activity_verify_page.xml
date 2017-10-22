@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appmodel.ridematcher.VerifyPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Code Here:"
+        android:id="@+id/VerifyTitle"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/VerifyBackButton"/>
+
+    <Button
+        android:id="@+id/VerifyBackButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeCloseDrawable"
+        android:onClick="verifyBackToSignup"/>
+
+    <EditText
+        android:id="@+id/VerifyCodeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/VerifyTitle"
+        android:layout_alignLeft="@+id/VerifyTitle"
+        android:layout_alignRight="@+id/VerifyTitle"
+        android:layout_alignStart="@+id/VerifyTitle"
+        android:layout_below="@+id/VerifyTitle"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Verify"
+        android:onClick="verifyCode"/>
+
+</RelativeLayout>

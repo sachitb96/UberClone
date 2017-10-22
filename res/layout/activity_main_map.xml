@@ -1,0 +1,48 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainLayout">
+    <fragment
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_above="@+id/RequestFrame"
+        android:layout_below="@+id/placesFrame"
+    tools:context="com.example.appmodel.ridematcher.MainMap" />
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/placesFrame"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/RequestFrame"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/HomeFrame"
+            android:visibility="gone"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appmodel.ridematcher.InformationPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:textSize="25sp"
+        android:id="@+id/InformationDetails"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:id="@+id/InformationFirstName"
+        android:layout_below="@+id/InformationDetails"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:id="@+id/InformationLasttName"
+        android:layout_toRightOf="@+id/InformationFirstName"
+        android:layout_toEndOf="@+id/InformationFirstName"
+        android:layout_alignBottom="@+id/InformationFirstName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:id="@+id/InformationEmailField"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/InformationFirstName"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/InformationPassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/InformationEmailField"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:id="@+id/InformationPhone"
+        android:inputType="phone"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/InformationPassword"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/InformationPhoneText"
+        android:layout_below="@+id/InformationPhone"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm"
+        android:background="@color/colorPrimary"
+        android:onClick="confirmAccount"/>
+</RelativeLayout>

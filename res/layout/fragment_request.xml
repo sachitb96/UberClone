@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_request_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appmodel.ridematcher.RequestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/standardCarImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@+id/standardCarText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/standardCarText"
+        android:onClick="requestStandard"
+        app:srcCompat="@drawable/standard_car" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/standardCarText"
+        android:text="Standard Car"
+        android:layout_below="@+id/standardCarImage"
+        android:textSize="18sp"
+        android:layout_alignLeft="@+id/distanceFareText"
+        android:layout_alignStart="@+id/distanceFareText" />
+
+    <ImageView
+        android:id="@+id/blackCarImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:onClick="requestBlack"
+        app:srcCompat="@drawable/black_car"
+        android:layout_marginRight="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/standardCarImage"
+        android:layout_alignStart="@+id/blackCarImage"
+        android:layout_alignLeft="@+id/blackCarImage"
+        android:text="Black Car"
+        android:textSize="18sp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Request Ride"
+        android:onClick="requestRide"
+        android:id="@+id/requestRideButton"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/distanceFareText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Distance:"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/standardfareField"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp" />
+
+    <TextView
+        android:id="@+id/distanceField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/distanceFareText"
+        android:layout_alignBottom="@+id/distanceFareText"
+        android:layout_alignLeft="@+id/blackfareField"
+        android:layout_alignStart="@+id/blackfareField" />
+
+    <TextView
+        android:id="@+id/standardfareField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/standardCarText"
+        android:layout_alignLeft="@+id/standardCarText"
+        android:layout_alignStart="@+id/standardCarText" />
+
+    <TextView
+        android:id="@+id/blackfareField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="TextView" />
+
+
+</RelativeLayout>

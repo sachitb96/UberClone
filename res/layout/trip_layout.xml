@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Name"
+        android:layout_below="@+id/DriverImage"
+        android:id="@+id/DriverName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Fare"
+        android:layout_below="@+id/DriverName"
+        android:id="@+id/DriverFare"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver PHone"
+        android:layout_below="@+id/DriverFare"
+        android:id="@+id/DriverPhone"/>
+
+    <ImageView
+        android:id="@+id/DriverImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/com_facebook_profile_picture_blank_portrait" />
+</RelativeLayout>

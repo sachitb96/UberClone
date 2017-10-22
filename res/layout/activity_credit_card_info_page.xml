@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.appmodel.ridematcher.CreditCardInfoPage">
+
+
+    <EditText
+        android:id="@+id/InfoCardNumberField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Card number"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InfoCardNumberField"
+        android:hint="MM"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:layout_marginTop="20dp"
+        android:id="@+id/InfoCardMonthField"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/InfoCardMonthField"
+        android:layout_toEndOf="@+id/InfoCardMonthField"
+        android:hint="YY"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+
+        android:id="@+id/InfoCardYearField"
+        android:layout_alignBottom="@+id/InfoCardMonthField"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InfoCardMonthField"
+        android:id="@+id/InfoCVCField"
+        android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+        android:layout_marginTop="20dp"
+        android:hint="CVC"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:onClick="skipSetup"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:background="@color/colorPrimary"
+        android:onClick="saveCard"/>
+
+</RelativeLayout>
